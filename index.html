@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelance Developer - Fast & Confidential</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: "Courier New", "Courier", monospace;
+            line-height: 1.6;
+            color: #888;
+            background: #0a0a0a;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+        
+        .lang-switch {
+            text-align: right;
+            margin-bottom: 30px;
+        }
+        
+        .lang-btn {
+            background: none;
+            border: 1px solid #333;
+            color: #666;
+            padding: 5px 15px;
+            margin-left: 10px;
+            cursor: pointer;
+            font-family: "Courier New", monospace;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+        
+        .lang-btn:hover {
+            border-color: #666;
+            color: #888;
+        }
+        
+        .lang-btn.active {
+            border-color: #888;
+            color: #aaa;
+        }
+        
+        h1 {
+            font-size: 20px;
+            font-weight: 400;
+            margin-bottom: 40px;
+            color: #aaa;
+        }
+        
+        h2 {
+            font-size: 16px;
+            font-weight: 400;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #999;
+        }
+        
+        h2::before {
+            content: "# ";
+            color: #555;
+        }
+        
+        .section {
+            display: none;
+        }
+        
+        .section.active {
+            display: block;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            color: #777;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+            list-style: none;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            color: #777;
+        }
+        
+        li::before {
+            content: "- ";
+            color: #555;
+        }
+        
+        code {
+            background: #111;
+            padding: 2px 6px;
+            color: #999;
+            font-family: "Courier New", monospace;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 18px;
+            }
+            
+            h2 {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-switch">
+            <button class="lang-btn active" onclick="switchLang('en')">EN</button>
+            <button class="lang-btn" onclick="switchLang('ru')">RU</button>
+        </div>
+        
+        <h1>fast development · crypto only · confidential</h1>
+        
+        <!-- ENGLISH SECTION -->
+        <div class="section active" id="lang-en">
+            <h2>about</h2>
+            <p>I provide quick script development, parsing, automation, and bug fixing. 6+ years of experience with C++ and Python. I deliver fast, work confidentially, and accept crypto payments only.</p>
+            
+            <h2>how i work</h2>
+            <ul>
+                <li>fast delivery — no delays</li>
+                <li>crypto payments only</li>
+                <li>no unnecessary questions</li>
+                <li>clear scope → clear result</li>
+                <li>full confidentiality</li>
+            </ul>
+            
+            <h2>what i can do</h2>
+            <ul>
+                <li>scripts and automation (python, c++)</li>
+                <li>web scrapers and parsers</li>
+                <li>bug fixing and code optimization</li>
+                <li>api integrations</li>
+                <li>cli tools and utilities</li>
+                <li>small to medium tasks</li>
+            </ul>
+            
+            <h2>payment</h2>
+            <p>accepted cryptocurrencies:</p>
+            <ul>
+                <li>bitcoin (btc)</li>
+                <li>tether usdt (trc20)</li>
+                <li>monero (xmr)</li>
+            </ul>
+            
+            <h2>contact</h2>
+            <p>email: <code>your.email@example.com</code></p>
+            <p>telegram: <code>@your_telegram</code></p>
+        </div>
+        
+        <!-- RUSSIAN SECTION -->
+        <div class="section" id="lang-ru">
+            <h2>о себе</h2>
+            <p>Занимаюсь быстрой разработкой скриптов, парсингом, автоматизацией и исправлением багов. Опыт работы с C++ и Python более 6 лет. Работаю быстро, конфиденциально, принимаю только криптовалюту.</p>
+            
+            <h2>как работаю</h2>
+            <ul>
+                <li>быстрая доставка результата — без задержек</li>
+                <li>оплата только криптовалютой</li>
+                <li>без лишних вопросов</li>
+                <li>чёткая задача → чёткий результат</li>
+                <li>полная конфиденциальность</li>
+            </ul>
+            
+            <h2>что делаю</h2>
+            <ul>
+                <li>скрипты и автоматизация (python, c++)</li>
+                <li>парсеры и скрейперы</li>
+                <li>исправление багов и оптимизация кода</li>
+                <li>интеграция с api</li>
+                <li>cli-утилиты и инструменты</li>
+                <li>задачи малого и среднего размера</li>
+            </ul>
+            
+            <h2>оплата</h2>
+            <p>принимаю криптовалюту:</p>
+            <ul>
+                <li>bitcoin (btc)</li>
+                <li>tether usdt (trc20)</li>
+                <li>monero (xmr)</li>
+            </ul>
+            
+            <h2>контакты</h2>
+            <p>email: <code>your.email@example.com</code></p>
+            <p>telegram: <code>@your_telegram</code></p>
+        </div>
+    </div>
+    
+    <script>
+        function switchLang(lang) {
+            // Hide all sections
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Show selected section
+            document.getElementById('lang-' + lang).classList.add('active');
+            
+            // Update button states
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
